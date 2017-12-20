@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the root path should response code 200 and rewrite in 'a-tag.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <a href=\\"//127.0.0.1\\">Link</a>
+
+    <a href=\\"//127.0.0.1\\">Link</a>
+
+    <a href=\\"//127.0.0.1\\" class=\\"active\\" title=\\"Home\\">Home</a>
+    <a href=\\"//127.0.0.1/information\\" class=\\"\\" title=\\"Info\\">Info</a>
+
+    <a href=\\"//127.0.0.1/\\">Link</a>
+
+    <a href=\\"//127.0.0.1\\">Link</a>
+
+    <a href=\\"//127.0.0.1:8080\\">Link</a>
+
+    <a href=\\"//127.0.0.1/%E5%BC%95%E3%81%8D%E5%89%B2%E3%82%8A.html\\">Link</a>
+
+    <a href=\\"http://example.ru\\">Link</a>
+
+    <a href=\\"http://test-example.com\\">Link</a>
+
+    <a href=\\"ftp://example.com/\\">Link</a>
+
+    <a href=\\"//127.0.0.1#hash\\">Link</a>
+
+    <a href=\\"//127.0.0.1\\">Link</a>
+
+    <a href=\\"//127.0.0.1/?foo=Bar&bar=foo\\">Link</a>
+
+    <a href='//127.0.0.1'>Home</a>
+
+    <a href=\\"/127.0.0.1/sub/dir\\">Link</a>
+
+    <a href=\\"http://subdomain.example.com\\">Link</a>
+
+    <a href=\\"//127.0.0.1/sub/dir/example.com/css/styles.css\\"></a>
+
+    <a href=\\"//127.0.0.1:8081\\">Link</a>
+  </body>
+</html>
+"
+`;
+
+exports[`Test the root path should response code 200 and rewrite in 'comment.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <!-- //127.0.0.1 -->
+  </body>
+</html>
+"
+`;
+
+exports[`Test the root path should response code 200 and rewrite in 'div-tag.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div style=\\"background: url('//127.0.0.1/background.jpg')\\">DIV</div>
+    <div style='background: url(\\"//127.0.0.1/background.jpg\\")'>DIV</div>
+    <div style=\\"background: url(//127.0.0.1/background.jpg)\\">DIV</div>
+  </body>
+</html>
+"
+`;
+
+exports[`Test the root path should response code 200 and rewrite in 'h1-tag.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>example.com</h1>
+  </body>
+</html>
+"
+`;
+
+exports[`Test the root path should response code 200 and rewrite in 'img-tag.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <img src=\\"//127.0.0.1/image.jpg\\">
+  </body>
+</html>
+"
+`;
+
+exports[`Test the root path should response code 200 and rewrite in 'js-tag.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var host = \\"//127.0.0.1\\";
+    </script>
+  </head>
+  <body></body>
+</html>
+"
+`;
+
+exports[`Test the root path should response code 200 and rewrite in 'link-tag.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head>
+    <link href=\\"//127.0.0.1/css/styles.css\\">example.com</link>
+  </head>
+  <body></body>
+</html>
+"
+`;
+
+exports[`Test the root path should response code 200 and rewrite in 'style-tag.html' 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .selector {
+        background: url(\\"//127.0.0.1/background.jpg\\");
+        background: url('//127.0.0.1/background.jpg');
+        background: url(//127.0.0.1/background.jpg);
+      }
+
+      a[href*=\\"//127.0.0.1\\"] {
+        background-color: #CCCCCC;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
+"
+`;
