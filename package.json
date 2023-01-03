@@ -32,7 +32,7 @@
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-unicorn": "^3.0.0",
     "express": "^4.16.2",
-    "jest": "^22.0.3",
+    "jest": "^29.3.1",
     "husky": "^0.14.1",
     "lint-staged": "^6.0.0",
     "npm-run-all": "^4.0.1",
